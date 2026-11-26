@@ -1,0 +1,822 @@
+{
+  "description": "交班告警基准采用对照样例：同一批巡查读数回放新旧基准",
+  "handoff_cutoff": 500,
+  "candidate_cutoff": 590,
+  "lookback": 360,
+  "group_min": 5,
+  "late_trained": [
+    "A3"
+  ],
+  "field_recovered": [
+    "A7"
+  ],
+  "expected_reasons": {
+    "A1": "ADOPT_NEW_BASELINE",
+    "A2": "UNRESOLVED_ALARM_MASKED",
+    "A3": "LATE_TRAINING_VOLUME",
+    "A4": "NO_DRIFT_DETECTED",
+    "A5": "NEW_BASELINE_NOT_READY",
+    "A6": "ADOPT_FIRST_BASELINE",
+    "A7": "ADOPT_NEW_BASELINE"
+  },
+  "history": [
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 140,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 150,
+      "pressure_kpa": 884.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 160,
+      "pressure_kpa": 888.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 170,
+      "pressure_kpa": 892.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 180,
+      "pressure_kpa": 896.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 190,
+      "pressure_kpa": 900.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 460,
+      "pressure_kpa": 950.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 470,
+      "pressure_kpa": 954.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 480,
+      "pressure_kpa": 958.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 490,
+      "pressure_kpa": 962.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 500,
+      "pressure_kpa": 966.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "family": "fam-a1",
+      "minute": 510,
+      "pressure_kpa": 970.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 140,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 150,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 160,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 170,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 180,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 190,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 460,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 470,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 480,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 490,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 500,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "family": "fam-a2",
+      "minute": 510,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 140,
+      "pressure_kpa": 700.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 150,
+      "pressure_kpa": 704.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 160,
+      "pressure_kpa": 708.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 170,
+      "pressure_kpa": 712.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 180,
+      "pressure_kpa": 716.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 190,
+      "pressure_kpa": 720.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 460,
+      "pressure_kpa": 760.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 470,
+      "pressure_kpa": 764.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 480,
+      "pressure_kpa": 768.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 520,
+      "pressure_kpa": 772.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 530,
+      "pressure_kpa": 776.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "family": "fam-a3",
+      "minute": 540,
+      "pressure_kpa": 780.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 140,
+      "pressure_kpa": 900.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 150,
+      "pressure_kpa": 904.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 160,
+      "pressure_kpa": 908.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 170,
+      "pressure_kpa": 912.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 180,
+      "pressure_kpa": 916.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 190,
+      "pressure_kpa": 920.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 460,
+      "pressure_kpa": 900.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 470,
+      "pressure_kpa": 904.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 480,
+      "pressure_kpa": 908.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 490,
+      "pressure_kpa": 912.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 500,
+      "pressure_kpa": 916.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "family": "fam-a4",
+      "minute": 510,
+      "pressure_kpa": 920.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 140,
+      "pressure_kpa": 600.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 150,
+      "pressure_kpa": 604.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 160,
+      "pressure_kpa": 608.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 170,
+      "pressure_kpa": 612.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 180,
+      "pressure_kpa": 616.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 190,
+      "pressure_kpa": 620.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 460,
+      "pressure_kpa": 600.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 470,
+      "pressure_kpa": 604.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "family": "fam-a5",
+      "minute": 480,
+      "pressure_kpa": 608.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "family": "fam-a6",
+      "minute": 470,
+      "pressure_kpa": 500.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "family": "fam-a6",
+      "minute": 475,
+      "pressure_kpa": 504.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "family": "fam-a6",
+      "minute": 480,
+      "pressure_kpa": 508.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "family": "fam-a6",
+      "minute": 485,
+      "pressure_kpa": 512.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "family": "fam-a6",
+      "minute": 505,
+      "pressure_kpa": 516.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "family": "fam-a6",
+      "minute": 510,
+      "pressure_kpa": 520.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 140,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 150,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 160,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 170,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 180,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 190,
+      "pressure_kpa": 800.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 460,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 470,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 480,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 490,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 500,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "family": "fam-a7",
+      "minute": 510,
+      "pressure_kpa": 880.0,
+      "vibration": 2.0,
+      "defrost": false
+    }
+  ],
+  "patrol": [
+    {
+      "unit": "A1",
+      "minute": 550,
+      "pressure_kpa": 945.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "minute": 560,
+      "pressure_kpa": 948.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "minute": 570,
+      "pressure_kpa": 946.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A1",
+      "minute": 580,
+      "pressure_kpa": 947.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "minute": 550,
+      "pressure_kpa": 885.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "minute": 560,
+      "pressure_kpa": 888.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "minute": 570,
+      "pressure_kpa": 886.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A2",
+      "minute": 580,
+      "pressure_kpa": 889.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "minute": 550,
+      "pressure_kpa": 770.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "minute": 560,
+      "pressure_kpa": 771.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "minute": 570,
+      "pressure_kpa": 770.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A3",
+      "minute": 580,
+      "pressure_kpa": 772.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "minute": 550,
+      "pressure_kpa": 910.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "minute": 560,
+      "pressure_kpa": 911.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "minute": 570,
+      "pressure_kpa": 910.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A4",
+      "minute": 580,
+      "pressure_kpa": 910.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "minute": 550,
+      "pressure_kpa": 610.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "minute": 560,
+      "pressure_kpa": 611.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "minute": 570,
+      "pressure_kpa": 610.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A5",
+      "minute": 580,
+      "pressure_kpa": 610.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "minute": 550,
+      "pressure_kpa": 506.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "minute": 560,
+      "pressure_kpa": 507.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "minute": 570,
+      "pressure_kpa": 506.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A6",
+      "minute": 580,
+      "pressure_kpa": 506.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "minute": 550,
+      "pressure_kpa": 885.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "minute": 560,
+      "pressure_kpa": 888.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "minute": 570,
+      "pressure_kpa": 886.0,
+      "vibration": 2.0,
+      "defrost": false
+    },
+    {
+      "unit": "A7",
+      "minute": 580,
+      "pressure_kpa": 889.0,
+      "vibration": 2.0,
+      "defrost": false
+    }
+  ]
+}
